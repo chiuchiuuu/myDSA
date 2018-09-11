@@ -45,16 +45,16 @@ public:
 	// API for unsorted vector
 	Rank find(const T &e) const { return find(e, 0, _size); }
 	Rank find(const T &e, Rank lo, Rank hi) const;
-	void sort(Rank lo, Rank hi);
+	//void sort(Rank lo, Rank hi);
 	void sort() { sort(0, _size); }
-	int deduplicate();
+	//int deduplicate();
 
 	// API for sorted vector
 	Rank search(const T &e) const { return 0 >= _size ? -1 : search(e, 0, _size); }
-	Rank search(const T &e, Rank lo, Rank hi) const;
-	void unsort(Rank lo, Rank hi);
+	//Rank search(const T &e, Rank lo, Rank hi) const;
+	//void unsort(Rank lo, Rank hi);
 	void unsort() { unsort(0, _size); }
-	int uniquify();
+	//int uniquify();
 
 	// traverse
 	void traverse(void(*visit)(T &));
